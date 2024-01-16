@@ -1,0 +1,149 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+.attribution { font-size: 11px; text-align: center; margin:0px 0px 50px }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body {
+    background: 
+        url(assets/images/background-pattern-desktop.svg) 0% -40% no-repeat,
+        hsl(275, 100%, 97%) ;   
+        background-attachment: fixed;
+}
+
+.container{
+    width: 550px;
+    margin: 100px auto 50px;
+    font-family: 'Work Sans', sans-serif;
+    display:flex;
+    flex-direction: column;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.faq{
+    display:flex;
+    margin:0px 0px 20px 0px;
+}
+
+h1{
+    font-size: 46px;
+    font-weight: bold;
+    margin:0px 0px 0px 15px;
+}
+
+.item{
+    display:flex;
+    justify-content: space-between;
+    border-width: 0px 0px 1px 0px;
+    border-style: solid; 
+    border-color:hsl(275, 100%, 97%);
+    margin:0px 0px 15px 0px;
+    cursor:pointer;
+}
+
+.accortion{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.accortion:hover{
+    font-size: 16px;
+    font-weight: bold;
+    color: hsl(283, 75%, 46%)
+}
+
+.panel{
+    font-size: 16px;
+    color: hsl(292, 16%, 49%);
+    display: none;
+    margin:0px 0px 20px 0px;
+    line-height: 1.3rem;
+}
+
+@media(max-width: 768px){
+    body{
+        background: 
+        url(assets/images/background-pattern-desktop.svg) 0% -10% no-repeat,
+        hsl(275, 100%, 97%) ;   
+        background-attachment: fixed;
+    }
+    .container{
+        max-width: 80%;
+    }
+    h1{
+        font-size: 30px;
+        margin:5px 0px 0px 15px;
+    }
+    .panel, .accortion, .accortion:hover{
+        font-size: 14PX;
+    }
+}
+
+@media(max-width: 376px){
+    body{
+        background: 
+        url(assets/images/background-pattern-mobile.svg) 0% -10% no-repeat,
+        hsl(275, 100%, 97%) ;   
+        background-attachment: fixed;
+    }
+    .container{
+        max-width: 50%;
+    }
+    h1{
+        font-size: 26px;
+        margin:5px 0px 0px 15px;
+    }
+    .panel, .accortion, .accortion:hover{
+        font-size: 12PX;
+    }
+}
+
