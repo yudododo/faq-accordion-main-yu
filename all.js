@@ -4,7 +4,8 @@ let imgs = document.querySelectorAll(".btn");
 
 items.forEach((item, index) => {
     item.addEventListener("click", function (e) {
-      if (panels[index].style.display === "none") {
+      console.log(panels[index].style.display);
+      if (panels[index].style.display === "none" || panels[index].style.display === "") {
         panels[index].style.display = "block";
         imgs[index].innerHTML = `<img src="assets/images/icon-minus.svg" alt="minus">`;
       } else {
